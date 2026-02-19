@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${crimsonPro.variable} antialiased`}
+        className={`${inter.variable} ${crimsonPro.variable} antialiased overflow-x-hidden`}
       >
         <Navbar />
         {children}

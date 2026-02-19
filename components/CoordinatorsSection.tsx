@@ -20,8 +20,8 @@ const cardVariant = {
 
 export default function CoordinatorsSection() {
   return (
-    <section className="relative bg-linear-to-b from-gray-50 to-white py-24 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section className="relative overflow-x-hidden bg-linear-to-b from-gray-50 to-white py-24 px-6">
+      <div className="max-w-6xl mx-auto w-full">
 
         {/* Section Heading */}
         <motion.div
@@ -48,21 +48,21 @@ export default function CoordinatorsSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-14 items-stretch"
+          className="grid md:grid-cols-2 gap-10 items-stretch"
         >
 
           {/* Director Card */}
           <motion.div
             variants={cardVariant}
-            className="group bg-white p-10 rounded-3xl shadow-md border border-gray-100 text-center transition hover:shadow-2xl hover:-translate-y-2 duration-300"
+            className="group bg-white p-8 rounded-3xl shadow-md border border-gray-100 text-center transition hover:shadow-2xl duration-300"
           >
-            <div className="overflow-hidden rounded-2xl w-48 h-48 mx-auto mb-6">
+            <div className="overflow-hidden rounded-2xl w-44 h-44 mx-auto mb-6">
               <Image
                 src="/sam.jpeg"
                 alt="Dr. Sam Solomon"
                 width={200}
                 height={200}
-                className="object-cover w-full h-full transition duration-500 group-hover:scale-110"
+                className="object-cover w-full h-full transition duration-500 group-hover:scale-105"
               />
             </div>
 
@@ -84,7 +84,7 @@ export default function CoordinatorsSection() {
                 04712308167 (O), 9847314237 (M)
               </div>
 
-              <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center justify-center gap-2 break-all">
                 <FaEnvelope className="text-blue-600" />
                 profsamsolomon@keralauniversity.ac.in
               </div>
@@ -94,15 +94,15 @@ export default function CoordinatorsSection() {
           {/* Assistant Director Card */}
           <motion.div
             variants={cardVariant}
-            className="group bg-white p-10 rounded-3xl shadow-md border border-gray-100 text-center transition hover:shadow-2xl hover:-translate-y-2 duration-300"
+            className="group bg-white p-8 rounded-3xl shadow-md border border-gray-100 text-center transition hover:shadow-2xl duration-300"
           >
-            <div className="overflow-hidden rounded-2xl w-48 h-48 mx-auto mb-6">
+            <div className="overflow-hidden rounded-2xl w-44 h-44 mx-auto mb-6">
               <Image
                 src="/lakhshmi.jpg"
                 alt="Lakshmi Sukumar"
                 width={200}
                 height={200}
-                className="object-cover w-full h-full transition duration-500 group-hover:scale-110"
+                className="object-cover w-full h-full transition duration-500 group-hover:scale-105"
               />
             </div>
 
@@ -126,7 +126,7 @@ export default function CoordinatorsSection() {
                 N/A
               </div>
 
-              <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center justify-center gap-2 break-all">
                 <FaEnvelope className="text-blue-600" />
                 drlakshmisukumar@keralauniversity.ac.in
               </div>

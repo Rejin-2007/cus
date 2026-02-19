@@ -14,10 +14,10 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 relative">
+    <footer className="bg-gray-900 text-gray-300 relative overflow-x-hidden">
 
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10">
+      <div className="max-w-7xl mx-auto w-full px-6 py-16 grid md:grid-cols-3 gap-10">
 
         {/* Logo & About */}
         <div className="space-y-4">
@@ -95,7 +95,7 @@ export default function Footer() {
           <div className="space-y-4 text-sm">
 
             <div className="flex gap-3">
-              <FaMapMarkerAlt className="mt-1 text-blue-500" />
+              <FaMapMarkerAlt className="mt-1 text-blue-500 shrink-0" />
               <p>
                 University of Kerala <br />
                 Thiruvananthapuram, Kerala
@@ -103,35 +103,38 @@ export default function Footer() {
             </div>
 
             <div className="flex gap-3">
-              <FaPhoneAlt className="mt-1 text-blue-500" />
+              <FaPhoneAlt className="mt-1 text-blue-500 shrink-0" />
               <p>0471 230 8167</p>
             </div>
 
             <div className="flex gap-3">
-              <FaEnvelope className="mt-1 text-blue-500" />
-              <p>info@keralauniversity.ac.in</p>
+              <FaEnvelope className="mt-1 text-blue-500 shrink-0" />
+              <p className="break-all">
+                info@keralauniversity.ac.in
+              </p>
             </div>
 
           </div>
         </div>
 
-        
-
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800 py-6 text-center text-sm text-gray-500 relative">
+      <div className="border-t border-gray-800 py-6 text-center text-sm text-gray-500 relative px-6">
 
-        © {new Date().getFullYear()} CUS Centre for Under Graduate Studies.
-        All rights reserved.
+        <div className="max-w-7xl mx-auto w-full relative">
+          © {new Date().getFullYear()} CUS Centre for Under Graduate Studies.
+          All rights reserved.
 
-        {/* Scroll to top button */}
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="absolute right-6 top-1/2 -translate-y-1/2 bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition"
-        >
-          <FaArrowUp className="text-white text-sm" />
-        </button>
+          {/* Scroll to top button */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="absolute right-0 top-1/2 -translate-y-1/2 bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition"
+          >
+            <FaArrowUp className="text-white text-sm" />
+          </button>
+        </div>
+
       </div>
     </footer>
   );
