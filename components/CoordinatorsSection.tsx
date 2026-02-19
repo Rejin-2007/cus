@@ -111,7 +111,7 @@ export default function CoordinatorsSection() {
             </h3>
 
             <span className="inline-block mt-2 px-4 py-1 text-sm bg-blue-600 text-white rounded-full shadow-sm">
-              Assistant Director, CUS
+              Acadamic Co-ordinator, CUS
             </span>
 
             <p className="text-gray-600 text-sm mt-4">

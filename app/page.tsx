@@ -1,15 +1,17 @@
+import AboutPreview from "@/components/AboutPreview";
 import CoordinatorsSection from "@/components/CoordinatorsSection";
+import FacilitiesSection from "@/components/FacilitiesSection";
 import HeroSection from "@/components/HeroSection";
-import LatestAnnouncements from "@/components/LatestAnnouncements";
-import TimetableNotice from "@/components/TimetableNotice";
+import NoticePreview from "@/components/NoticePreview";
 
 export default function Home() {
   return (
     <div>
       <HeroSection />
       <CoordinatorsSection />
-      <LatestAnnouncements />
-      <TimetableNotice />
+      <AboutPreview />
+      <FacilitiesSection />
+      <NoticePreview />
     </div>
   );
 }
